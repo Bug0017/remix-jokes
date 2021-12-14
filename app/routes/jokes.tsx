@@ -12,9 +12,9 @@ export let loader: LoaderFunction = async() => {
 export default function JokesRoute(){
     let data = useLoaderData();
     return (
-      <div>
+      <div >
         <h1>jokes</h1>
-        <main className={tw`p-20`}>
+        <main className={tw`flex flex-row space-x-10`}>
           <ul>
             {data.jokes.map(j=>{
               return (
